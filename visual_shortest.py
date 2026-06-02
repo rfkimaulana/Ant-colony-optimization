@@ -4,8 +4,6 @@ Visualisasi rute terpendek H ke D lewat '#' dengan total jarak 23.
 Style mengikuti hasil_rute.png. Disimpan ke 'hasil_shortest_23.png'.
 """
 
-import matplotlib
-matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from graph import COORDS, EDGES
@@ -56,6 +54,7 @@ def main():
     ax.axis("off")
     fig.tight_layout()
     fig.savefig("hasil_shortest_23.png", dpi=130)
+    plt.show()
     print("Tersimpan: hasil_shortest_23.png")
     print(f"Rute  : {rute_str}  (jarak {TOTAL})")
 
